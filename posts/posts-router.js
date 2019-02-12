@@ -84,7 +84,7 @@ router.put("/:id", (req, res) => {
         res.status(200).json(post);
       }
     })
-    .catch(err =>
+    .catch(() =>
       res
         .status(500)
         .json({ message: "The post information could not be modified." })
